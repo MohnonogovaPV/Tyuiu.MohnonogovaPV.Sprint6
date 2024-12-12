@@ -9,7 +9,7 @@ namespace Tyuiu.MohnonogovaPV.Sprint6.Task5.V6.Test
         {
             DataService ds = new DataService();
             var path = @"C:\Users\Полина\source\repos\Tyuiu.MohnonogovaPV.Sprint6\DataSprint6\InPutFileTask5V6.txt";
-            double[] res = dataService.LoadFromDataFile(path);
+            double[] res = DataService.LoadFromDataFile(path);
             double[] wait = new double[res.Length];
             wait[0] = -13;
             wait[1] = -19;
