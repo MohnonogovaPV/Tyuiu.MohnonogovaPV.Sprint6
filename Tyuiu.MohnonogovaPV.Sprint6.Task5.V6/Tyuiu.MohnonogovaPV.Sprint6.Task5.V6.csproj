@@ -12,4 +12,8 @@
     <ProjectReference Include="..\Tyuiu.MohnonogovaPV.Sprint6.Task5.V6.Lib\Tyuiu.MohnonogovaPV.Sprint6.Task5.V6.Lib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="System\Windows\Forms\" />
+  </ItemGroup>
+
 </Project>

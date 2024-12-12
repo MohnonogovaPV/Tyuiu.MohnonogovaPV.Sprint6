@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.panelTask_DDA = new System.Windows.Forms.Panel();
             this.groupBoxCondition_DDA = new System.Windows.Forms.GroupBox();
             this.textBoxCondition_DDA = new System.Windows.Forms.TextBox();
             this.buttonInfo_DDA = new System.Windows.Forms.Button();
@@ -216,7 +212,6 @@
         private System.Windows.Forms.DataGridView dataGridViewResult_DDA;
         private System.Windows.Forms.Panel panelChart_DDA;
         private System.Windows.Forms.Button buttonInfo_DDA;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartResult_DDA;
         private System.Windows.Forms.GroupBox groupBoxCondition_DDA;
     }
 }
