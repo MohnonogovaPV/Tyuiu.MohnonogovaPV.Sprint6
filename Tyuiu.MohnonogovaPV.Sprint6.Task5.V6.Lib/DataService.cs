@@ -5,6 +5,12 @@ namespace Tyuiu.MohnonogovaPV.Sprint6.Task5.V6.Lib
     public class DataService : ISprint1Task5V6
     {
         public int len = 0;
+
+        public int Calculate(int k)
+        {
+            throw new NotImplementedException();
+        }
+
         public double[] LoadFromDataFile(string path)
         {
             using (StreamReader reader = new StreamReader(path))
