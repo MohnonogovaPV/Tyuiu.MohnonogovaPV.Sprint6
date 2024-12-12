@@ -1,4 +1,4 @@
-using Tyuiu.MohnonogovaPV.Sprint6.Task5.V6.Lib;
+ï»¿using Tyuiu.MohnonogovaPV.Sprint6.Task5.V6.Lib;
 namespace Tyuiu.MohnonogovaPV.Sprint6.Task5.V6
 {
     public partial class FormMain : Form
@@ -9,48 +9,83 @@ namespace Tyuiu.MohnonogovaPV.Sprint6.Task5.V6
         }
 
         DataService ds = new DataService();
+        private object formsPlot_FDA;
 
-        private string path = $@"{Directory.GetCurrentDirectory()}\InPutFileTask5V6.txt";
-        private void buttonDone_DDA_Click(object sender, EventArgs e)
+        private void buttonDone_FDA_Click(object sender, EventArgs e)
         {
-            dataGridViewResult_DDA.ColumnCount = 2;
-            dataGridViewResult_DDA.Columns[0].Width = 20;
-            dataGridViewResult_DDA.Columns[1].Width = 50;
-
-            this.chartResult_DDA.ChartAreas[0].AxisX.Title = "Îñü X";
-            this.chartResult_DDA.ChartAreas[0].AxisY.Title = "Îñü Y";
-
-            chartResult_DDA.Series[0].Points.Clear();
-
-            double[] numMass = new double[ds.len];
-
-            numMass = ds.LoadFromDataFile(path);
-
-            for (int i = 0; i < numMass.Length; i++)
+            try
             {
-                dataGridViewResult_DDA.Rows.Add(Convert.ToString(i), Convert.ToString(numMass[i]));
-                chartResult_DDA.Series[0].Points.AddXY(i, numMass[i]);
+                int startStep = Convert.ToInt32(textBoxStartStep_FDA.Text);
+                int stopStep = Convert.ToInt32(textBoxStopStep_FDA.Text);
+
+                double[] valueArray;
+                int len = (int)ds.GetMassFunction(startStep, stopStep);
+                valueArray = new double[len];
+
+
+                double[] xData = new double[len];
+                double[] yData = new double[len];
+
+                for (int i = 0; i < len; i++)
+                {
+                    xData[i] = startStep + i;
+                    yData[i] = valueArray[i];
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+                string strLine;
+
+                textBoxResult_FDA.Text = "";
+                for (int i = 0; i <= len - 1; i++)
+                {
+                    strLine = String.Format(Convert.ToString(valueArray[i]));
+                    textBoxResult_FDA.AppendText(strLine + Environment.NewLine);
+                    startStep++;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"ÃÃ°Ã®Ã¨Ã§Ã®Ã¸Ã«Ã  Ã®Ã¸Ã¨Ã¡ÃªÃ : {ex.Message}", "ÃŽÃ¸Ã¨Ã¡ÃªÃ ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void buttonSave_FDA_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string path = Path.Combine(new string[] { Path.GetTempPath(), "OutPutFile.txt" });
+                File.WriteAllText(path, textBoxResult_FDA.Text);
+
+                DialogResult dialogResult = MessageBox.Show("Ã”Ã Ã©Ã« " + path + " Ã±Ã®ÃµÃ°Ã Ã­Ã¥Ã­ Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã®!\n ÃŽÃ²ÃªÃ°Ã»Ã²Ã¼ Ã¥Ã£Ã®?", "Ã‘Ã®Ã®Ã¡Ã¹Ã¥Ã­Ã¨Ã¥", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process txt = new System.Diagnostics.Process();
+                    txt.StartInfo.FileName = "notepad.exe";
+                    txt.StartInfo.Arguments = path;
+                    txt.Start();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Ã‘Ã¡Ã®Ã© Ã¯Ã°Ã¨ Ã±Ã®ÃµÃ°Ã Ã­Ã¥Ã­Ã¨Ã¨ Ã´Ã Ã©Ã«Ã ", "ÃŽÃ¸Ã¨Ã¡ÃªÃ ", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-
         }
 
-        private void buttonInfo_DDA_Click(object sender, EventArgs e)
+        private void buttonQuestion_FDA_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Òàñê 5 âûïîëíèëà ñòóäåíòêà ãðóïïû ÀÑÎèÓá-24-1 Ìîõíîíîãîâà Ïîëèíà Âèêòîðîâíà", "Ñîîáùåíèå");
-        }
-
-        private void buttonOpenFile_DDA_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process txt = new System.Diagnostics.Process();
-            txt.StartInfo.FileName = "notepad.exe";
-            txt.StartInfo.Arguments = path;
-            txt.Start();
-        }
-
-        private void dataGridViewResult_DDA_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            MessageBox.Show("Ã’Ã Ã±Ãª 4 Ã¢Ã»Ã¯Ã®Ã«Ã­Ã¨Ã« Ã±Ã²Ã³Ã¤Ã¥Ã­Ã² Ã£Ã°Ã³Ã¯Ã¯Ã» Ã€Ã‘ÃŽÃ¨Ã“Ã¡-24-1 Ã”Ã¥Ã¤Ã®Ã°Ã®Ã¢Ã  Ã„Ã Ã°Ã¼Ã¿ Ã€Ã°Ã²Ã¥Ã¬Ã®Ã¢Ã­Ã ", "Ã‘Ã®Ã®Ã¡Ã¹Ã¥Ã­Ã¨Ã¥");
         }
     }
 }

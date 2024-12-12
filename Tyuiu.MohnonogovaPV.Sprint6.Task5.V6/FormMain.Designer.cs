@@ -1,4 +1,5 @@
-﻿namespace Tyuiu.MohnonogovaPV.Sprint6.Task5.V6
+﻿using Tyuiu.MohnonogovaPV.Sprint6.Task5.V6.Lib;
+namespace Tyuiu.MohnonogovaPV.Sprint6.Task5.V6
 {
     partial class FormMain
     {
@@ -20,198 +21,198 @@
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором форм Windows
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            this.groupBoxCondition_DDA = new System.Windows.Forms.GroupBox();
-            this.textBoxCondition_DDA = new System.Windows.Forms.TextBox();
-            this.buttonInfo_DDA = new System.Windows.Forms.Button();
-            this.buttonOpenFile_DDA = new System.Windows.Forms.Button();
-            this.buttonDone_DDA = new System.Windows.Forms.Button();
-            this.panelOutPut_DDA = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridViewResult_DDA = new System.Windows.Forms.DataGridView();
-            this.panelChart_DDA = new System.Windows.Forms.Panel();
-            this.chartResult_DDA = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.panelTask_DDA.SuspendLayout();
-            this.groupBoxCondition_DDA.SuspendLayout();
-            this.panelOutPut_DDA.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult_DDA)).BeginInit();
-            this.panelChart_DDA.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartResult_DDA)).BeginInit();
-            this.SuspendLayout();
+            buttonDone_FDA = new Button();
+
+            textBoxStartStep_FDA = new TextBox();
+            textBoxStopStep_FDA = new TextBox();
+            groupBoxTask_FDA = new GroupBox();
+            textBoxTask_FDA = new TextBox();
+            groupBoxData_FDA = new GroupBox();
+            textStopStep_FDA = new TextBox();
+            textStartStep_FDA = new TextBox();
+            groupBoxResult_FDA = new GroupBox();
+            textBoxResult_FDA = new TextBox();
+            buttonQuestion_FDA = new Button();
+            buttonSave_FDA = new Button();
+            groupBoxTask_FDA.SuspendLayout();
+            groupBoxData_FDA.SuspendLayout();
+            groupBoxResult_FDA.SuspendLayout();
+            SuspendLayout();
             // 
-            // panelTask_DDA
+            // buttonDone_FDA
             // 
-            this.panelTask_DDA.Controls.Add(this.groupBoxCondition_DDA);
-            this.panelTask_DDA.Controls.Add(this.buttonInfo_DDA);
-            this.panelTask_DDA.Controls.Add(this.buttonOpenFile_DDA);
-            this.panelTask_DDA.Controls.Add(this.buttonDone_DDA);
-            this.panelTask_DDA.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTask_DDA.Location = new System.Drawing.Point(0, 0);
-            this.panelTask_DDA.Name = "panelTask_DDA";
-            this.panelTask_DDA.Size = new System.Drawing.Size(1472, 139);
-            this.panelTask_DDA.TabIndex = 0;
+            buttonDone_FDA.BackColor = Color.FromArgb(192, 255, 192);
+            buttonDone_FDA.Location = new Point(863, 23);
+            buttonDone_FDA.Name = "buttonDone_FDA";
+            buttonDone_FDA.Size = new Size(126, 80);
+            buttonDone_FDA.TabIndex = 0;
+            buttonDone_FDA.Text = "Выполнить";
+            buttonDone_FDA.UseVisualStyleBackColor = false;
+            buttonDone_FDA.Click += buttonDone_FDA_Click;
             // 
-            // groupBoxCondition_DDA
+            // formsPlot_FDA
             // 
-            this.groupBoxCondition_DDA.Controls.Add(this.textBoxCondition_DDA);
-            this.groupBoxCondition_DDA.Location = new System.Drawing.Point(12, 12);
-            this.groupBoxCondition_DDA.Name = "groupBoxCondition_DDA";
-            this.groupBoxCondition_DDA.Size = new System.Drawing.Size(642, 121);
-            this.groupBoxCondition_DDA.TabIndex = 5;
-            this.groupBoxCondition_DDA.TabStop = false;
-            this.groupBoxCondition_DDA.Text = "Условие:";
+            formsPlot_FDA.DisplayScale = 1.25F;
+            formsPlot_FDA.Location = new Point(360, 134);
+            formsPlot_FDA.Name = "formsPlot_FDA";
+            formsPlot_FDA.Size = new Size(887, 506);
+            formsPlot_FDA.TabIndex = 1;
             // 
-            // textBoxCondition_DDA
+            // textBoxStartStep_FDA
             // 
-            this.textBoxCondition_DDA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxCondition_DDA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxCondition_DDA.Location = new System.Drawing.Point(3, 18);
-            this.textBoxCondition_DDA.Multiline = true;
-            this.textBoxCondition_DDA.Name = "textBoxCondition_DDA";
-            this.textBoxCondition_DDA.ReadOnly = true;
-            this.textBoxCondition_DDA.Size = new System.Drawing.Size(636, 100);
-            this.textBoxCondition_DDA.TabIndex = 0;
-            this.textBoxCondition_DDA.Text = resources.GetString("textBoxCondition_DDA.Text");
+            textBoxStartStep_FDA.Location = new Point(6, 55);
+            textBoxStartStep_FDA.Name = "textBoxStartStep_FDA";
+            textBoxStartStep_FDA.Size = new Size(134, 27);
+            textBoxStartStep_FDA.TabIndex = 2;
             // 
-            // buttonInfo_DDA
+            // textBoxStopStep_FDA
             // 
-            this.buttonInfo_DDA.BackColor = System.Drawing.Color.SteelBlue;
-            this.buttonInfo_DDA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonInfo_DDA.Location = new System.Drawing.Point(1040, 59);
-            this.buttonInfo_DDA.Name = "buttonInfo_DDA";
-            this.buttonInfo_DDA.Size = new System.Drawing.Size(139, 74);
-            this.buttonInfo_DDA.TabIndex = 4;
-            this.buttonInfo_DDA.Text = "Справка";
-            this.buttonInfo_DDA.UseVisualStyleBackColor = false;
-            this.buttonInfo_DDA.Click += new System.EventHandler(this.buttonInfo_DDA_Click);
+            textBoxStopStep_FDA.Location = new Point(164, 55);
+            textBoxStopStep_FDA.Name = "textBoxStopStep_FDA";
+            textBoxStopStep_FDA.Size = new Size(135, 27);
+            textBoxStopStep_FDA.TabIndex = 3;
             // 
-            // buttonOpenFile_DDA
+            // groupBoxTask_FDA
             // 
-            this.buttonOpenFile_DDA.BackColor = System.Drawing.Color.Yellow;
-            this.buttonOpenFile_DDA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonOpenFile_DDA.Location = new System.Drawing.Point(906, 59);
-            this.buttonOpenFile_DDA.Name = "buttonOpenFile_DDA";
-            this.buttonOpenFile_DDA.Size = new System.Drawing.Size(128, 75);
-            this.buttonOpenFile_DDA.TabIndex = 2;
-            this.buttonOpenFile_DDA.Text = "Открыть файл";
-            this.buttonOpenFile_DDA.UseVisualStyleBackColor = false;
-            this.buttonOpenFile_DDA.Click += new System.EventHandler(this.buttonOpenFile_DDA_Click);
+            groupBoxTask_FDA.Controls.Add(textBoxTask_FDA);
+            groupBoxTask_FDA.Location = new Point(12, 12);
+            groupBoxTask_FDA.Name = "groupBoxTask_FDA";
+            groupBoxTask_FDA.Size = new Size(530, 116);
+            groupBoxTask_FDA.TabIndex = 4;
+            groupBoxTask_FDA.TabStop = false;
+            groupBoxTask_FDA.Text = "Условие";
             // 
-            // buttonDone_DDA
+            // textBoxTask_FDA
             // 
-            this.buttonDone_DDA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.buttonDone_DDA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDone_DDA.Location = new System.Drawing.Point(781, 60);
-            this.buttonDone_DDA.Name = "buttonDone_DDA";
-            this.buttonDone_DDA.Size = new System.Drawing.Size(119, 74);
-            this.buttonDone_DDA.TabIndex = 1;
-            this.buttonDone_DDA.Text = "Выполнить";
-            this.buttonDone_DDA.UseVisualStyleBackColor = false;
-            this.buttonDone_DDA.Click += new System.EventHandler(this.buttonDone_DDA_Click);
+            textBoxTask_FDA.BorderStyle = BorderStyle.None;
+            textBoxTask_FDA.Location = new Point(6, 26);
+            textBoxTask_FDA.Multiline = true;
+            textBoxTask_FDA.Name = "textBoxTask_FDA";
+            textBoxTask_FDA.ReadOnly = true;
+            textBoxTask_FDA.Size = new Size(518, 84);
+            textBoxTask_FDA.TabIndex = 0;
+            textBoxTask_FDA.Text = "Протабулируйте функцию на заданном диапазоне от -5 до 5\r\nРезультат вывести в textBox. Построить график функции и сохранить в файл OutPutFileTask.txt по нажатию кнопки\r\n\r\n";
             // 
-            // panelOutPut_DDA
+            // groupBoxData_FDA
             // 
-            this.panelOutPut_DDA.Controls.Add(this.groupBox1);
-            this.panelOutPut_DDA.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelOutPut_DDA.Location = new System.Drawing.Point(0, 139);
-            this.panelOutPut_DDA.Name = "panelOutPut_DDA";
-            this.panelOutPut_DDA.Size = new System.Drawing.Size(249, 687);
-            this.panelOutPut_DDA.TabIndex = 1;
+            groupBoxData_FDA.Controls.Add(textStopStep_FDA);
+            groupBoxData_FDA.Controls.Add(textStartStep_FDA);
+            groupBoxData_FDA.Controls.Add(textBoxStartStep_FDA);
+            groupBoxData_FDA.Controls.Add(textBoxStopStep_FDA);
+            groupBoxData_FDA.Location = new Point(548, 12);
+            groupBoxData_FDA.Name = "groupBoxData_FDA";
+            groupBoxData_FDA.Size = new Size(309, 116);
+            groupBoxData_FDA.TabIndex = 5;
+            groupBoxData_FDA.TabStop = false;
+            groupBoxData_FDA.Text = "Ввод данных";
             // 
-            // groupBox1
+            // textStopStep_FDA
             // 
-            this.groupBox1.Controls.Add(this.dataGridViewResult_DDA);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(249, 687);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Вывод данных:";
+            textStopStep_FDA.BorderStyle = BorderStyle.None;
+            textStopStep_FDA.Location = new Point(164, 29);
+            textStopStep_FDA.Name = "textStopStep_FDA";
+            textStopStep_FDA.ReadOnly = true;
+            textStopStep_FDA.Size = new Size(125, 20);
+            textStopStep_FDA.TabIndex = 5;
+            textStopStep_FDA.Text = "Конец шага";
             // 
-            // dataGridViewResult_DDA
+            // textStartStep_FDA
             // 
-            this.dataGridViewResult_DDA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewResult_DDA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewResult_DDA.Location = new System.Drawing.Point(3, 18);
-            this.dataGridViewResult_DDA.Name = "dataGridViewResult_DDA";
-            this.dataGridViewResult_DDA.RowHeadersVisible = false;
-            this.dataGridViewResult_DDA.RowHeadersWidth = 51;
-            this.dataGridViewResult_DDA.RowTemplate.Height = 24;
-            this.dataGridViewResult_DDA.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridViewResult_DDA.Size = new System.Drawing.Size(243, 666);
-            this.dataGridViewResult_DDA.TabIndex = 0;
-            this.dataGridViewResult_DDA.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewResult_DDA_CellContentClick);
+            textStartStep_FDA.BorderStyle = BorderStyle.None;
+            textStartStep_FDA.Location = new Point(6, 29);
+            textStartStep_FDA.Name = "textStartStep_FDA";
+            textStartStep_FDA.ReadOnly = true;
+            textStartStep_FDA.Size = new Size(125, 20);
+            textStartStep_FDA.TabIndex = 4;
+            textStartStep_FDA.Text = "Старт шага";
             // 
-            // panelChart_DDA
+            // groupBoxResult_FDA
             // 
-            this.panelChart_DDA.Controls.Add(this.chartResult_DDA);
-            this.panelChart_DDA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChart_DDA.Location = new System.Drawing.Point(249, 139);
-            this.panelChart_DDA.Name = "panelChart_DDA";
-            this.panelChart_DDA.Size = new System.Drawing.Size(1223, 687);
-            this.panelChart_DDA.TabIndex = 2;
+            groupBoxResult_FDA.Controls.Add(textBoxResult_FDA);
+            groupBoxResult_FDA.Location = new Point(12, 130);
+            groupBoxResult_FDA.Name = "groupBoxResult_FDA";
+            groupBoxResult_FDA.Size = new Size(342, 510);
+            groupBoxResult_FDA.TabIndex = 5;
+            groupBoxResult_FDA.TabStop = false;
+            groupBoxResult_FDA.Text = "Вывод";
             // 
-            // chartResult_DDA
+            // textBoxResult_FDA
             // 
-            this.chartResult_DDA.BackColor = System.Drawing.Color.Snow;
-            chartArea3.Name = "ChartArea1";
-            this.chartResult_DDA.ChartAreas.Add(chartArea3);
-            this.chartResult_DDA.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend3.Name = "Legend1";
-            this.chartResult_DDA.Legends.Add(legend3);
-            this.chartResult_DDA.Location = new System.Drawing.Point(0, 0);
-            this.chartResult_DDA.Name = "chartResult_DDA";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartResult_DDA.Series.Add(series3);
-            this.chartResult_DDA.Size = new System.Drawing.Size(1223, 687);
-            this.chartResult_DDA.TabIndex = 0;
+            textBoxResult_FDA.BackColor = SystemColors.ControlLightLight;
+            textBoxResult_FDA.Location = new Point(6, 26);
+            textBoxResult_FDA.Multiline = true;
+            textBoxResult_FDA.Name = "textBoxResult_FDA";
+            textBoxResult_FDA.ReadOnly = true;
+            textBoxResult_FDA.Size = new Size(330, 466);
+            textBoxResult_FDA.TabIndex = 0;
+            // 
+            // buttonQuestion_FDA
+            // 
+            buttonQuestion_FDA.BackColor = Color.FromArgb(192, 255, 255);
+            buttonQuestion_FDA.Location = new Point(1127, 23);
+            buttonQuestion_FDA.Name = "buttonQuestion_FDA";
+            buttonQuestion_FDA.Size = new Size(126, 80);
+            buttonQuestion_FDA.TabIndex = 6;
+            buttonQuestion_FDA.Text = "Справка";
+            buttonQuestion_FDA.UseVisualStyleBackColor = false;
+            buttonQuestion_FDA.Click += buttonQuestion_FDA_Click;
+            // 
+            // buttonSave_FDA
+            // 
+            buttonSave_FDA.BackColor = Color.FromArgb(255, 255, 192);
+            buttonSave_FDA.Location = new Point(995, 23);
+            buttonSave_FDA.Name = "buttonSave_FDA";
+            buttonSave_FDA.Size = new Size(126, 80);
+            buttonSave_FDA.TabIndex = 7;
+            buttonSave_FDA.Text = "Сохранить";
+            buttonSave_FDA.UseVisualStyleBackColor = false;
+            buttonSave_FDA.Click += buttonSave_FDA_Click;
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1472, 826);
-            this.Controls.Add(this.panelChart_DDA);
-            this.Controls.Add(this.panelOutPut_DDA);
-            this.Controls.Add(this.panelTask_DDA);
-            this.Name = "FormMain";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Спринт 6 | Таск 5 | Вариант 6 | Мохноногова П. В.";
-            this.panelTask_DDA.ResumeLayout(false);
-            this.groupBoxCondition_DDA.ResumeLayout(false);
-            this.groupBoxCondition_DDA.PerformLayout();
-            this.panelOutPut_DDA.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult_DDA)).EndInit();
-            this.panelChart_DDA.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chartResult_DDA)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1266, 634);
+            Controls.Add(buttonSave_FDA);
+            Controls.Add(buttonQuestion_FDA);
+            Controls.Add(groupBoxResult_FDA);
+            Controls.Add(groupBoxData_FDA);
+            Controls.Add(groupBoxTask_FDA);
+            Controls.Add(formsPlot_FDA);
+            Controls.Add(buttonDone_FDA);
+            Name = "FormMain";
+            Text = "Спринт 6 | Таск 4 | Вариант 11 | Федорова Д.А.";
+            groupBoxTask_FDA.ResumeLayout(false);
+            groupBoxTask_FDA.PerformLayout();
+            groupBoxData_FDA.ResumeLayout(false);
+            groupBoxData_FDA.PerformLayout();
+            groupBoxResult_FDA.ResumeLayout(false);
+            groupBoxResult_FDA.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelTask_DDA;
-        private System.Windows.Forms.Button buttonOpenFile_DDA;
-        private System.Windows.Forms.Button buttonDone_DDA;
-        private System.Windows.Forms.TextBox textBoxCondition_DDA;
-        private System.Windows.Forms.Panel panelOutPut_DDA;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridViewResult_DDA;
-        private System.Windows.Forms.Panel panelChart_DDA;
-        private System.Windows.Forms.Button buttonInfo_DDA;
-        private System.Windows.Forms.GroupBox groupBoxCondition_DDA;
+        private Button buttonDone_FDA;
+
+        private TextBox textBoxStartStep_FDA;
+        private TextBox textBoxStopStep_FDA;
+        private GroupBox groupBoxTask_FDA;
+        private GroupBox groupBoxData_FDA;
+        private TextBox textBoxTask_FDA;
+        private GroupBox groupBoxResult_FDA;
+        private Button buttonQuestion_FDA;
+        private Button buttonSave_FDA;
+        private TextBox textStopStep_FDA;
+        private TextBox textStartStep_FDA;
+        private TextBox textBoxResult_FDA;
     }
 }
