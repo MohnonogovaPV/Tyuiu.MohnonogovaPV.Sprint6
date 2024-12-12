@@ -7,6 +7,7 @@ namespace Tyuiu.MohnonogovaPV.Sprint6.Task5.V6.Test
         [TestMethod]
         public void CheckLoadFromDataFile()
         {
+            var path = @"C:\DataSprint6\InPutFileTask5V6.txt";
             double[] valueWaitArray;
             valueWaitArray = new double[1];
             valueWaitArray[0] = -12;
