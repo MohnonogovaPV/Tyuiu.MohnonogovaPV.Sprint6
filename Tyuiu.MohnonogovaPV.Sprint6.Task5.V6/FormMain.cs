@@ -34,15 +34,6 @@ namespace Tyuiu.MohnonogovaPV.Sprint6.Task5.V6
 
 
 
-
-
-
-
-
-
-
-
-
                 string strLine;
 
                 textBoxResult_FDA.Text = "";

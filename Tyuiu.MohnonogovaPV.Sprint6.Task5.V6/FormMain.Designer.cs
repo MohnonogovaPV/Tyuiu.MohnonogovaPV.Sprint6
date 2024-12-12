@@ -186,7 +186,7 @@ namespace Tyuiu.MohnonogovaPV.Sprint6.Task5.V6
             Controls.Add(groupBoxResult_FDA);
             Controls.Add(groupBoxData_FDA);
             Controls.Add(groupBoxTask_FDA);
-            Controls.Add(formsPlot_FDA);
+            Controls.Add((Control)formsPlot_FDA);
             Controls.Add(buttonDone_FDA);
             Name = "FormMain";
             Text = "Спринт 6 | Таск 4 | Вариант 11 | Федорова Д.А.";
