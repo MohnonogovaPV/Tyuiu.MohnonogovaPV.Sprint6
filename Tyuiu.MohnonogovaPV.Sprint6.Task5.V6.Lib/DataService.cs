@@ -10,10 +10,12 @@ namespace Tyuiu.MohnonogovaPV.Sprint6.Task5.V6.Lib
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
+
                 while ((line = reader.ReadLine()) != null)
                 {
                     len++;
                 }
+
             }
 
             double[] numsArray = new double[len];
@@ -23,26 +25,42 @@ namespace Tyuiu.MohnonogovaPV.Sprint6.Task5.V6.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
+
                     numsArray[index] = Convert.ToDouble(line);
                     index++;
-
                 }
             }
-            numsArray = numsArray.Where(var => var % 1 == 0).ToArray();
 
-            double[] resArray = new double[numsArray.Length];
-            for (int i = 0; i < numsArray.Length; i++)
+
+            using (StreamReader reader = new StreamReader(path))
             {
-                if (numsArray[i].GetType().ToString() == "System.Double")
+                string line;
+                double y;
+                while ((line = reader.ReadLine()) != null)
                 {
-                    resArray[i] = Math.Round(numsArray[i], 3);
-                }
-                else
-                {
-                    resArray[i] = numsArray[i];
+                    string[] arr = line.Split(' ');
+                    foreach (string value2 in arr)
+                    {
+                        bool check = false;
+                        foreach (char tempchar in value2)
+                        {
+                            if (tempchar == '.' || tempchar == ',')
+                            {
+                                check = true;
+                            }
+                        }
+                        if (check)
+                        {
+                            continue;
+                        }
+                        double value = Convert.ToInt32(value2);
+                        y = Math.Round(value, 3);
+                    }
                 }
             }
-            return resArray;
+
+            numsArray = numsArray.Where(n => n % 3 == 0).ToArray();
+            return numsArray;
         }
     }
 }
